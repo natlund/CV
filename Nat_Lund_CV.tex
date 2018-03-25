@@ -89,54 +89,71 @@
 
 \cvitem{Examiner's Remark}{``[This] chapter describes ... fluid mechanics concepts with a \textbf{depth and clarity which is very rarely found even in classical fluid mechanics textbooks}. It is an absolute pleasure to read... The candidate does a very good job of explaining complex concepts with clear and concise arguments."}
 
-\cvitem{Off-Topic Project}{To gain some insight into the global financial crisis, I studied \textbf{fractional-reserve banking} and reviewed Nassim Taleb's \textbf{`Black Swan'}.}
+%\cvitem{Off-Topic Project}{To gain some insight into the global financial crisis, I studied \textbf{fractional-reserve banking} and reviewed Nassim Taleb's \textbf{`Black Swan'}.}
 
-\cvitem{Other Work}{I volunteered my services on a complex systems project.  I learnt Python, taught it to other students, and wrote scripts to \textbf{extract data} from a million-line text file and create \textbf{network graphs} from the data.}
+%\cvitem{Other Work}{I volunteered my services on a complex systems project.  I learnt Python, taught it to other students, and wrote scripts to \textbf{extract data} from a million-line text file and create \textbf{network graphs} from the data.}
 
 \section{Computer Skills}
 \cvitem{Intermediate}{Python, \LaTeX\ } %(for mathematical typesetting, eg: $\nabla \cdot \vec{u} = 0$)}
-\cvitem{Basic}{SQL; Python scientific libraries such as Matplotlib, Pandas, Numpy, Scipy; Linux, Git, Agile development; Django web framework}
+\cvitem{Basic}{SQL; Python scientific libraries such as Matplotlib, Pandas, Numpy, Scipy; Linux; Amazon cloud services; Git, Agile development; Django web framework}
 
 
-% \section{Communication Skills}
-% \cvitem{Written}{\textbf{Technical Writing:} PhD thesis (35,000 words with 2,000 equations) noted for outstanding depth and clarity.}
+\section{Communication Skills}
+\cvitem{Written}{\textbf{Technical Writing:} PhD thesis (35,000 words with 2,000 equations) noted for outstanding depth and clarity.}
+\cvitem{Tutoring}{\textbf{codebar} participation: Volunteer tutoring (of basic Python) in an environment intended to be safe and friendly to people under-represented in the technology sector.}
 % \cvitem{Oral}{\textbf{Presentations:}  Over a dozen 10 - 15 minute talks given during graduate study.}
 
-
+\pagebreak
 \section{Experience}
 
 \subsection{Vocational}
 
-\cventry{Sep 2016 -- Mar 2017}{Data Scientist}{\textsc{Metail}}{Cambridge}{www.metail.co.uk}
-{Worked in a startup that builds virtual fitting-room 3-D modelling technology for use on fashion retail websites.  The Data Science technology stack centred on the use of Python and SQL to access an Amazon Redshift database, and the use of the Pandas Python library for data processing.  The role was mostly providing ad-hoc analysis for other teams, with some more in-depth project work.
-Analyses were mostly done in Python and SQL.
+\cventry{Sep 2016 -- Mar 2018}{Software Engineer, Data Scientist}{\textsc{Metail}}{Cambridge UK}{www.metail.co.uk}
+{Metail is a fashion-tech startup that builds virtual fitting-room 3-D modelling technology for use on fashion retail websites, possibly pivoting to a digital composite photography service.  I worked in three areas: Data Science, physics modelling in C++, and deploying a machine-learning microservice with AWS.
 \begin{itemize}
-	\item Numerous analyses of website user behaviour for the product team.
-	\item Various analyses of business metrics for business teams.
-	\item Exploratory analysis and modelling. Eg. created a flowchart of user behaviour with transition probabilities.
-	\item Did in-depth code reviews as part of a Scrum-like agile system.
-	\item Technical review/discussion on AB testing, distribution fitting, Random Forest modelling.
-	\item Maintained and extended Looker, a graphical business intelligence tool. Built Looker dashboards for clients.
-	\item Conducted training on Looker for non-technical users.
-	%\item Taught non-technical users to use Looker.
+	\item The data science technology stack centred on the use of Python and SQL to query an Amazon Redshift database, and Python pandas for data processing.
+	\item Did various ad-hoc business analyses of user behaviour, as well as more exploratory modelling eg. created a flowchart of user behaviour and transition probabilities.
+	\item Maintained and extended Looker, a graphical business intelligence dashboard tool.  Conducted training on Looker for non-technical users.
+	\item Learnt C++ and read through an 8,000-line physics modelling code base that had been untouched for 5 years.  Did minor refactoring and extension.
+	\item The physics code modelled fabric as a spring-mass network, with collisions and gravity.
+	\item Wrote comprehensive documentation of the physics code, including 40 pages of technical prose and 80 slides of diagrams.
+	\item Explained the workings -- and quirks -- of the physics code to non-technical consumers of the physics modelling software, thereby resolving long-standing puzzles.
+	\item Converted an image segmentation Convolutional Neural Network model from the R\&D team into Python code suitable for wider consumption.
+	\item Helped deploy the image segmentation machine-learning model as a Python microservice on Amazon.
 \end{itemize}
 }
+\vspace{0.2 em}
 
-\cventry{Jun -- Aug 2016}{Data Analyst}{\textsc{Booking.com}}{Cambridge}{www.booking.com}
+%\cventry{Sep 2016 -- Mar 2017}{Data Scientist}{\textsc{Metail}}{Cambridge}{www.metail.co.uk}
+%{Worked in a startup that builds virtual fitting-room 3-D modelling technology for use on fashion retail websites.  The Data Science technology stack centred on the use of Python and SQL to access an Amazon Redshift database, and the use of the Pandas Python library for data processing.  The role was mostly providing ad-hoc analysis for other teams, with some more in-depth project work.  Analyses were mostly done in Python and SQL.
+%\begin{itemize}
+%	\item Numerous analyses of website user behaviour for the product team.
+%	\item Various analyses of business metrics for business teams.
+%	\item Exploratory analysis and modelling. Eg. created a flowchart of user behaviour with transition probabilities.
+%	\item Did in-depth code reviews as part of a Scrum-like agile system.
+%	\item Technical review/discussion on AB testing, distribution fitting, Random Forest modelling.
+%	\item Maintained and extended Looker, a graphical business intelligence tool. Built Looker dashboards for clients.
+%	\item Conducted training on Looker for non-technical users.
+	%\item Taught non-technical users to use Looker.
+%\end{itemize}
+%}
+
+\cventry{Jun -- Aug 2016}{Data Analyst}{\textsc{Booking.com}}{Cambridge UK}{www.booking.com}
 {Worked in the Pay-Per-Click Webmarketing department of a large internet travel retailer, writing Python code to do data analysis and automate various business processes.
 %\newline{}
 %Details:
 \begin{itemize}
 	\item Text-processing to automatically shorten hotel names to fit into advertisement formats.
-	\item Wrote code to extract data and plot graphs of various business metrics.
+	%\item Wrote code to extract data and plot graphs of various business metrics.
 	\item Developed scoring system to rate relevance of advertising copy to search query terms.  Wrote code to score advertisements, generate a table of actionable items, and email the table to automatically assigned Account Managers.
-	\item Wrote Python code to connect to a Hive/Hadoop cluster, run SQL queries, etc.
+	%\item Wrote Python code to connect to a Hive/Hadoop cluster, run SQL queries, etc.
 \end{itemize}
 }
 \vspace{0.2em}
 
-\cventry{Jun 2014 -- Mar 2015}{Data Scientist}{\textsc{Publons}}{Wellington}{www.publons.com}
-{Worked in a rapidly-growing internet startup using the Python web framework Django.  Main projects included data cleanup, name disambiguation, text matching, search, and statistics.  Additional work included basic web programming, user interface design.  I also did planning and strategizing, and relating with various stakeholders.
+\cventry{Jun 2014 -- Mar 2015}{Data Scientist}{\textsc{Publons}}{Wellington NZ}{www.publons.com}
+{Worked in a rapidly-growing internet startup using the Python web framework Django.  Main projects included data cleanup, name disambiguation, text matching, search, and statistics.  Additional work included basic web programming, and user interface design.  
+%I also did planning and strategizing, and relating with various stakeholders.
 %\newline{}
 %Details:
 \begin{itemize}
@@ -145,8 +162,8 @@ Analyses were mostly done in Python and SQL.
 	\item Researched string matching algorithms, and implemented a modified version that gave best results for matching names.
 	\item Built a prototype search engine from basic Python language processing and linear algebra components.
 	%(It was later replaced by the industry-standard Lucene engine, which is mathematically equivalent.)
-	\item Generated summary statistics of key company data, with careful attention to graphical presentations that gave the easiest comprehension.
-	\item Developed a rating system designed to allow meaningful comparison of published articles.
+	%\item Generated summary statistics of key company data, with careful attention to graphical presentations that gave the easiest comprehension.
+	%\item Developed a rating system designed to allow meaningful comparison of published articles.
 \end{itemize}
 }
 
