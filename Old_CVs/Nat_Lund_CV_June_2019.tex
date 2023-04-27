@@ -1,0 +1,328 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Nat} % Your first name
+\familyname{Lund} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+%\address{123 Broadway}{City, State 12345}
+\address{Nathaniel J. Lund}{British Citizen and}{New Zealand Citizen}
+%\mobile{021 0274 8330}
+\mobile{074 9095 4037}
+%\phone{(000) 111 1112}
+%\phone{089 450 1988}
+%\fax{(000) 111 1113}
+\email{natjlund@gmail.com}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{Rational thinking is an emotional skill}
+
+%\photo[75bp][0.4pt]{Nat_Lund_150x150} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"Democracy is the worst possible form of government, except for all other forms of government."\\ - Winston Churchill}
+%\quote{natjlund@gmail.com}
+%----------------------------------------------------------------------------------------
+
+\quote{Physicist venturing into software development. Passionate about code readability and clear technical writing.}
+
+%\quote{Optimize for code readability -- all else follows.  Things should be as simple as possible, but no simpler.}
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+\cvitem{Web}{\textbf{Github Account:} https:/\hspace{-0.2em}/github.com/natlund}
+%\cvitem{}   {\textbf{Webpage:} http:/\hspace{-0.2em}/natlund.github.io}
+
+
+\section{Computer Skills}
+\cvitem{}{Python}
+\cvitem{}{Python libraries: SQLAlchemy, Matplotlib, Pandas, Numpy, Scipy, Keras}
+\cvitem{}{C++, SQL, \LaTeX}
+\cvitem{}{Linux, Git, Bash, Jenkins, Agile development}
+\cvitem{}{Amazon cloud services, Django web framework}
+%\cvitem{Intermediate}{Python, \LaTeX\ } %(for mathematical typesetting, eg: $\nabla \cdot \vec{u} = 0$)}
+%\cvitem{Basic}{SQL; Python scientific libraries such as Matplotlib, Pandas, Numpy, Scipy; Linux; Amazon cloud services; Git, Agile development; Django web framework}
+
+
+\section{Communication Skills}
+\cvitem{Written}{\textbf{Technical Writing:} PhD thesis noted for outstanding depth and clarity.}
+\cvitem{Tutoring}{\textbf{codebar} participation: Volunteer tutoring in minority-friendly environment.}% environment intended to be safe and friendly to people under-represented in tech.}
+% \cvitem{Oral}{\textbf{Presentations:}  Over a dozen 10 - 15 minute talks given during graduate study.}
+
+\section{Work History}
+
+\cventry{Aug 2018 -- Present}{Data Engineer}{\textsc{Flexciton}}{London UK}{www.flexciton.com}
+{Flexciton helps industrial factories solve the problem of production scheduling, by providing a web interface to a state-of-the-art scheduling optimisation algorithm.
+\begin{itemize}
+	\item Worked on the repository code layer that translates between a Postgres database and Python domain model objects using the sqlalchemy library.
+	\item General back-end development in the Flask web app.
+	\item Wrote an Ontology, working with all stakeholders to converge on definitions of all key concepts, and creating schematic diagrams of the conceptual relationships.
+	\item Wrote documentation, including docs that reduced the on-boarding time for a new developer from three days down to one day.
+\end{itemize}}
+
+\vspace{0.2em}
+
+\cventry{Sep 2016 -- May 2018}{Software Engineer, Data Scientist}{\textsc{Metail}}{Cambridge UK}{www.metail.co.uk}
+{Metail is a fashion-tech startup that builds virtual fitting-room 3-D modelling technology for use on fashion retail websites, and provides a digital composite photography service.
+%I worked in three areas: Data Science, physics modelling in C++, and deploying a machine-learning microservice with AWS.
+	\begin{itemize}
+		\item \textbf{Data Science} Various ad-hoc business analyses, typically using Python and SQL to query an Amazon Redshift database, and Python pandas for data processing.
+		\item Maintained and extended Looker, a graphical business intelligence tool. Trained users.
+		\item \textbf{Physics Modelling} Learnt C++, and analysed and documented an 8,000-line physics modelling code that had been untouched for 5 years. Did minor refactoring and extension.
+		\item Wrote 40 pages of technical documentation and 80 slides of diagrams detailing the physics modelling code. Explained how it works to non-technical users.
+		\item \textbf{Machine Learning} Converted an image segmentation Convolutional Neural Network from the R\&D team into Python code.  Helped deploy it as a microservice on Amazon.
+	\end{itemize}
+}
+
+
+%\cventry{Sep 2016 -- May 2018}{Software Engineer, Data Scientist}{\textsc{Metail}}{Cambridge UK}{www.metail.co.uk}
+%{Metail is a fashion-tech startup that builds virtual fitting-room 3-D modelling technology for use on fashion retail websites, and provides a digital composite photography service.  I worked in three areas: Data Science, physics modelling in C++, and deploying a machine-learning microservice with AWS.
+%	\begin{itemize}
+%		\item The data science technology stack centred on the use of Python and SQL to query an Amazon Redshift database, and Python pandas for data processing.
+%		\item Did various ad-hoc business analyses of user behaviour, as well as more exploratory modelling eg. created a flowchart of user behaviour and transition probabilities.
+%		\item Maintained and extended Looker, a graphical business intelligence dashboard tool.  Conducted training on Looker for non-technical users.
+%		\item Learnt C++ and read through an 8,000-line physics modelling code base that had been untouched for 5 years.  Did minor refactoring and extension.
+%		\item The physics code modelled fabric as a spring-mass network, with collisions and gravity.
+%		\item Wrote comprehensive documentation of the physics code, including 40 pages of technical prose and 80 slides of diagrams.
+%		\item Explained the workings -- and quirks -- of the physics code to non-technical consumers of the physics modelling software, thereby resolving long-standing puzzles.
+%		\item Converted an image segmentation Convolutional Neural Network model from the R\&D team into Python code suitable for wider consumption.
+%		\item Helped deploy the image segmentation machine-learning model as a Python microservice on Amazon.
+%	\end{itemize}
+%}
+
+
+%\section{Work History}
+
+%\subsection{Vocational}
+
+\cventry{Jun -- Aug 2016}{Data Analyst}{\textsc{Booking.com}}{Cambridge UK}{www.booking.com}
+{Worked in the Pay-Per-Click Webmarketing department of a large internet travel retailer, writing Python code to do data analysis and automate various business processes.
+	%\newline{}
+	%Details:
+	\begin{itemize}
+		\item Text-processing to automatically shorten hotel names to fit into advertisement formats.
+		%\item Wrote code to extract data and plot graphs of various business metrics.
+		\item Developed scoring system to rate relevance of advertising copy to search query terms.  Wrote code to score advertisements, generate a table of actionable items, and email the table to automatically assigned Account Managers.
+		%\item Wrote Python code to connect to a Hive/Hadoop cluster, run SQL queries, etc.
+	\end{itemize}
+}
+\vspace{0.2em}
+
+\cventry{Jun 2014 -- Mar 2015}{Data Scientist}{\textsc{Publons}}{Wellington NZ}{www.publons.com}
+{Worked in a rapidly-growing internet startup using the Python web framework Django.  Main projects included data cleanup, name disambiguation, text matching, search, and statistics.  Additional work included basic web programming, and user interface design.  
+%I also did planning and strategizing, and relating with various stakeholders.
+%\newline{}
+%Details:
+\begin{itemize}
+%	\item Investigated raw data, and wrote heuristic code to sanitise it automatically.
+	\item Wrote heuristic code to flag suspicious data, thus enabling data cleanup.
+	\item Researched string matching algorithms, and implemented a modified version that gave best results for matching names.
+	\item Built a prototype search engine from basic Python language processing and linear algebra components.
+	%(It was later replaced by the industry-standard Lucene engine, which is mathematically equivalent.)
+	%\item Generated summary statistics of key company data, with careful attention to graphical presentations that gave the easiest comprehension.
+	%\item Developed a rating system designed to allow meaningful comparison of published articles.
+\end{itemize}
+}
+
+
+\subsection{Tutoring}
+%\cvitem{Early 2016}{Tutored A-level Physics.}
+%\cvitem{2007 - 2012}{During my PhD, I provided assistance to various fellow PhD students, often with Python, and in particular to a Polynesian maths graduate who was not familiar with the physics component of his topic.}
+\cvitem{2005 - 2006}{One-on-one mathematics tutoring of a student with Asperger's syndrome.}
+\cvitem{2004}{Small-group tutoring of first-year mathematics.}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2014}{PhD in Theoretical Physics}{Victoria University of Wellington}{New Zealand}{}{Fluid Mechanics (Microfluidics)}
+\cventry{2006}{BSc Honours in Physics}{Victoria University of Wellington}{New Zealand}{}{First Class Honours}
+\cventry{2004}{BSc in Mathematics and Physics}{Victoria University of Wellington}{New Zealand}{}{}%{\textsc{A-- average}}
+
+\subsection{Doctoral Thesis}
+
+\cvitem{Title}{\emph{Effective Slip Lengths for Stokes Flow over Rough, Mixed-Slip Surfaces}}
+\cvitem{Supervisor}{Professor Shaun Hendy}
+\cvitem{Description}{The motivation was the recent development of surfaces patterned on the nano scale that offer reduced drag to liquids flowing over them.  The physics was modelled as incompressible Stokes flow with a rough, periodic boundary condition.  Analytic solutions were obtained by the perturbation and homogenization methods, yielding a prediction of the improved flow of liquids over nano-patterned surfaces.
+}
+
+% \cvitem{Examiner's Remark}{``This [introductory] chapter describes fairly standard fluid mechanics concepts but with a \textbf{depth and clarity which is very rarely found even in classical fluid mechanics textbooks}. It is an absolute pleasure to read even if this chapter contains very little new/original results. The candidate does a very good job of explaining complex concepts with clear and concise arguments."}
+
+\cvitem{Examiner's Remark}{``[This] chapter describes ... fluid mechanics concepts with a \textbf{depth and clarity which is very rarely found even in classical fluid mechanics textbooks}. It is an absolute pleasure to read... The candidate does a very good job of explaining complex concepts with clear and concise arguments."}
+
+%\cvitem{Off-Topic Project}{To gain some insight into the global financial crisis, I studied \textbf{fractional-reserve banking} and reviewed Nassim Taleb's \textbf{`Black Swan'}.}
+
+%\cvitem{Other Work}{I volunteered my services on a complex systems project.  I learnt Python, taught it to other students, and wrote scripts to \textbf{extract data} from a million-line text file and create \textbf{network graphs} from the data.}
+
+\section{Interests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{Economics}{Guitar}
+\cvlistdoubleitem{Philosophy of Science}{Music from Bluegrass to Heavy Metal}
+%\cvlistdoubleitem{Machine Learning}{Food Science}
+
+\end{document}
+
+\section{Former Legal Blindness}
+\cvitem{1995 - 2007}{I was legally blind for approximately 12 years.
+At the beginning of my PhD, I began the process of corneal transplant surgeries and rehabilitation, which took several years.  The process was a great success -- I can now legally drive.}
+
+\end{document}
+
+
+
+\end{document}
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\subsection{Vocational}
+
+\cventry{2012--Present}{1\textsuperscript{st} Year Analyst}{\textsc{Lehman Brothers}}{Los Angeles}{}{Developed spreadsheets for risk analysis on exotic derivatives on a wide array of commodities (ags, oils, precious and base metals), managed blotter and secondary trades on structured notes, liaised with Middle Office, Sales and Structuring for bookkeeping.
+\newline{}\newline{}
+Detailed achievements:
+\begin{itemize}
+\item Learned how to make amazing coffee
+\item Finally determined the reason for \textsc{PC LOAD LETTER}:
+\begin{itemize}
+\item Paper jam
+\item Software issues:
+\begin{itemize}
+\item Word not sending the correct data to printer
+\item Windows trying to print in letter format
+\end{itemize}
+\item Coffee spilled inside printer
+\end{itemize}
+\item Broke the office record for number of kitten pictures in cubicle
+\end{itemize}}
+
+%------------------------------------------------
+
+\cventry{2010--2011}{Summer Intern}{\textsc{Lehman Brothers}}{Los Angeles}{}{Rated "truly distinctive" for Analytical Skills and Teamwork.}
+
+%------------------------------------------------
+
+\subsection{Miscellaneous}
+
+\cventry{2008--2009}{Computer Repair Specialist}{Buy More}{Burbank}{}{Worked in the Nerd Herd and helped to solve computer problems by asking customers to turn their computers off and on again.}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+\cvitem{2011}{School of Business Postgraduate Scholarship}
+\cvitem{2010}{Top Achiever Award -- Commerce}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Computer skills}
+
+\cvitem{Basic}{\textsc{java}, Adobe Illustrator}
+\cvitem{Intermediate}{\textsc{python}, \textsc{html}, \LaTeX, OpenOffice, Linux, Microsoft Windows}
+\cvitem{Advanced}{Computer Hardware and Support}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Communication Skills}
+
+\cvitem{2010}{Oral Presentation at the California Business Conference}
+\cvitem{2009}{Poster at the Annual Business Conference in Oregon}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{English}{Mothertongue}{}
+\cvitemwithcomment{Spanish}{Intermediate}{Conversationally fluent}
+\cvitemwithcomment{Dutch}{Basic}{Basic words and phrases only}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{Piano}{Chess}
+\cvlistdoubleitem{Cooking}{Dancing}
+\cvlistitem{Running}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+\clearpage
+
+\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+\date{\today} % Letter date
+\opening{Dear Sir or Madam,} % Opening greeting
+\closing{Sincerely yours,} % Closing phrase
+\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+\makelettertitle % Print letter title
+
+\lipsum[1-3] % Dummy text
+
+\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
