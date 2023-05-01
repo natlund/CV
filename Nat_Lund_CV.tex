@@ -37,6 +37,8 @@
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 
+\usepackage{url}
+
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
 %----------------------------------------------------------------------------------------
@@ -68,27 +70,71 @@
 
 \makecvtitle % Print the CV title
 
-\cvitem{Web}{\textbf{Github Account:} https:/\hspace{-0.2em}/github.com/natlund}
-%\cvitem{}   {\textbf{Webpage:} http:/\hspace{-0.2em}/natlund.github.io}
+%\cvitem{Web}{\textbf{Github Account:} https:/\hspace{-0.2em}/github.com/natlund}
+\cvitem{Online Book}{\textbf{My opinions on writing good code:} \url{https://natlund.github.io/software_engineering/principles_of_code_structure/}}
 
 
 \section{Computer Skills}
-\cvitem{}{Python}
-\cvitem{}{Python libraries: SQLAlchemy, Matplotlib, Pandas, Numpy, Scipy, Keras}
-\cvitem{}{C++, SQL, \LaTeX}
-\cvitem{}{Linux, Git, Bash, Jenkins, Agile development}
-\cvitem{}{Amazon cloud services, Django web framework}
+
+\cvitem{Good}{Python, Code Review, Software Design Analysis,  Documentation}
+\cvitem{Adequate}{SQL, Linux, Git, Bash, \LaTeX}
+\cvitem{Basic}{Python libraries: SQLAlchemy, Matplotlib, Pandas, Numpy, Scipy, Keras}
+\cvitem{}{C++, Amazon cloud services, Django web framework}
+
+%\cvitem{}{Python}
+%\cvitem{}{Python libraries: SQLAlchemy, Matplotlib, Pandas, Numpy, Scipy, Keras}
+%\cvitem{}{C++, SQL, \LaTeX}
+%\cvitem{}{Linux, Git, Bash, Jenkins, Agile development}
+%\cvitem{}{Amazon cloud services, Django web framework}
 %\cvitem{Intermediate}{Python, \LaTeX\ } %(for mathematical typesetting, eg: $\nabla \cdot \vec{u} = 0$)}
 %\cvitem{Basic}{SQL; Python scientific libraries such as Matplotlib, Pandas, Numpy, Scipy; Linux; Amazon cloud services; Git, Agile development; Django web framework}
 
 
 \section{Communication Skills}
 \cvitem{Written}{\textbf{Technical Writing:} PhD thesis noted for outstanding depth and clarity.}
-\cvitem{Tutoring}{\textbf{codebar} participation: Volunteer tutoring in minority-friendly environment.}% environment intended to be safe and friendly to people under-represented in tech.}
+%\cvitem{Tutoring}{\textbf{codebar} participation: Volunteer tutoring in minority-friendly environment.}% environment intended to be safe and friendly to people under-represented in tech.}
 
 \section{Work History}
 
-\cventry{Aug 2018 -- Present}{Data Engineer}{\textsc{Flexciton}}{London UK}{www.flexciton.com}
+\cventry{March 2022 -- Present}{Senior Software Engineer (Quant)}{\textsc{Chetwood/Yobota} (merged)}{}{}
+{Yobota was merged with Chetwood, a challenger bank based in Wrexham, Wales.  I continued to work on the same Quant code base that administered account business logic and maths.
+\begin{itemize}
+    \item Was Tech Lead on a sub-project to deliver variable interest rates on deposit accounts, as part of a project to deliver 'easy access' deposits.
+        \begin{itemize}
+            \item Worked with a product expert to develop a domain model to precisely describe the mechanism of rate changes.
+            \item Spent many weeks in analysis with a database engineer, writing engineering specs.
+            \item Supervised engineers in building various components, and built some myself.
+            \item Every fortnight, conferred with engineers and updated a Gantt chart, to give management a view on progress.
+            \item When the wider project was jeopardised by personnel losses following the merger, raised this to management.  (Project was ultimately cancelled.)
+        \end{itemize}
+    \item Worked on project to deliver Upfront Fees on loans, with appropriate fee rebates.
+        \begin{itemize}
+            \item Worked closely with fellow Quant engineers on analysis and proposing solutions.
+            \item Created a slide deck with diagrams to explain issues and options to non-techical stakeholders, and met daily with product experts to discuss and decide on solutions.
+            \item To maximise Quant team throughput while keeping code quality high, I prioritised doing multiple rounds of thorough code review, and in-depth design discussions.
+            \item Carefully extended complex, fragile existing code to reconcile any fee rebates due to events occurring in the grace period of a scheduled payment.
+            \item The Quant team met a tight self-imposed deadline for our work, to give the wider team a chance to meet a quarterly objective.  Our efforts and discipline were commended at the highest level.
+        \end{itemize}
+\end{itemize}
+}
+
+\cventry{July 2019 -- March 2022}{Mid Software Engineer (Quant)}{\textsc{Yobota}}{London UK}{www.yobota.xyz}
+{Yobota was a startup building a banking software platform in the cloud.  I worked in the Quant team, on the core code base that administered the business logic and financial mathematics throughout the life cycle of each loan or deposit account.
+\begin{itemize}
+    \item The platform code base was rapidly-written 'startup-style' code with business logic scattered throughout the Quant code and database functions. Because the system was 'event-driven', code units with no connection were nevertheless tightly coupled.  I eventually became a relative expert in Quant code and system behaviour, second only to the programmers who originally built the system.
+    \item Fixed numerous bugs, most of which required weeks of analysis, coding, and testing via simulations.
+    \item As the last line of customer support, did deep analysis into loans in an inconsistent state (usually due to bugs).  Provided forensic analysis of what went wrong, made recommendations for the support fix, and specified the bug fix in code.
+    \item Built a module to replay the history of a loan, automatically re-pricing it, assuming a payment had been received at an earlier time.
+    \item Built a module with a 'fluent' method-chaining interface to systematically generate the hundreds of lines of JSON needed for database function calls, that were previously being assembled in an ad hoc fashion.
+    \item  Was Tech Lead on a project to add the capability of fees onto loans.  Did analysis of full event-driven flow, worked with product expert, created an engineering spec with diagrams, communicated the spec to other engineers, and wrote my part of the code.  The project was rumoured to be the first to complete on time, with all functionality in place, and high-quality code.
+    \item Was Tech Lead on a project to add Account Opening fees on loans.  Checked the maths, and productionised a prototype Newton-Raphson numerical solver for Annual Percentage Rate (APR), that was given to us by management.
+    \item Acquired a reputation for 'brutal' but kind and constructive code reviews: thorough and deep, focusing on readability, and simple, maintainable code.
+    \item Mentored more junior engineers, especially in the art of writing readable code.
+    \item Created a slide deck to drive discussions on engineering management, met with engineering managers, and captured a decent consensus view of our best engineers and engineering managers.
+\end{itemize}
+}
+
+\cventry{Aug 2018 -- April 2019}{Data Engineer}{\textsc{Flexciton}}{London UK}{www.flexciton.com}
 {Flexciton helps industrial factories solve the problem of production scheduling, by providing a web interface to a state-of-the-art scheduling optimisation algorithm.
 \begin{itemize}
 	\item Worked on the repository code layer that translates between a Postgres database and Python domain model objects using the sqlalchemy library.
